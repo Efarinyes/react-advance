@@ -1,0 +1,117 @@
+[
+    {
+        "type": "input",
+        "name": "firstName",
+        "placeholder": "El teu nom",
+        "label": "First Name",
+        "value": "",
+        "validations": [
+            {
+                "type": "required"
+            },
+            {
+                "type": "minLength",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "type": "input",
+        "name": "lastName",
+        "placeholder": "El teu cognom",
+        "label": "last Name",
+        "value": "",
+        "validations": [
+            {
+                "type": "required"
+            },
+            {
+                "type": "minLength",
+                "value": 5
+            }
+        ]
+    },
+    {
+        "type": "email",
+        "name": "email",
+        "placeholder": "El teu correu electrònic",
+        "label": "Email",
+        "value": "",
+        "validations": [
+            {
+                "type": "required"
+            },
+            {
+                "type": "email"
+            }
+        ]
+    },
+    {
+        "type": "select",
+        "name": "favoriteGame",
+        "label": "Favorite Game",
+        "value": "",
+        "options": [
+            {
+                "id": 1,
+                "label": "Warcraft"
+            },
+            {
+                "id": 2,
+                "label": "CSGO"
+            },
+            {   
+                "id": 3,
+                "label": "League of Legends"
+            },
+            {
+                "id": 4,
+                "label": "PUBG"
+            },
+            {
+                "id": 5,
+                "label": "Fortnite"
+            }
+        ],
+        "validations": [
+            {
+                "type": "required"
+            }
+        ]
+        
+    },
+    {
+        "type": "password",
+        "name": "password1",
+        "placeholder": "Contrasenya",
+        "label": "Contrassenya",
+        "value": "",
+        "validations": [
+            {
+                "type": "required"
+            },
+            {
+                "type": "minLength",
+                "value": 6
+            }
+
+        ]
+    },
+    {
+        "type": "password",
+        "name": "password2",
+        "placeholder": "Confirma la contrasenya",
+        "label": "Confirma la contrasenya",
+        "value": "",
+        "validations": [
+            {
+                "type": "required"
+            },
+            {
+                "type": "equalTo",
+                "value": "password1"
+            }
+
+        ]
+    }
+]
